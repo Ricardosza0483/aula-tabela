@@ -3,39 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela</title>
+    <title>Document</title>
+     <style>
+    th, td  {
+        border:1px
+        solid black ;
+    }
+      tfoot{  
+        background-color: red;
+      }
+     </style>
 </head>
 <body>
     <table>
-     
-        <thead>
-           <tr>
-              <th>Produto</th>
-              <th>Quantidade</th>
-              <th>Preco</th>
-              <th>Blackfryday</th>
-              
-           </tr>
-
-
-     </thead> 
-
-      <tbody>
-         <
-
-      </tbody>
-
-
-
-
-
-
-    </table>
-
-
-
-
-
-
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>quantidade</th>
+          <th>preço</th>
+          <th>Black Friday</th>
+        </tr>
+     </thead>
+        <tbody>
+          <tr>
+            <td colspan="1">produto 1</td>
+            <td>2</td>
+            <td>5$</td>
+            <td>Sim</td>
+          </tr>
+          <tr>
+            <td rowspan="1 ">produto 2</td>
+            <td>5</td>
+            <td>10$</td>
+            <td>Sim</td>
+          </tr>
+          <tr>
+            <td>produto 3</td>
+            <td>3</td>
+            <td>15$</td>
+            <td>Não</td>
+          </tr>
+        </tbody> 
+          <tfoot>
+            <tr>
+              <td colspan="3">Total</td>
+              <td>30$</td>
+            </tr>       
+          </tfoot>
+        </table>
 </body>
 </html>
